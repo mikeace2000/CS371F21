@@ -1,0 +1,31 @@
+51372 execve("./HelloWorld", ["./HelloWorld"], [/* 65 vars */]) = 0
+51372 brk(NULL)                         = 0xaa9000
+51372 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+51372 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+51372 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+51372 fstat(3, {st_mode=S_IFREG|0644, st_size=89592, ...}) = 0
+51372 mmap(NULL, 89592, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f69a743a000
+51372 close(3)                          = 0
+51372 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+51372 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+51372 read(3, "\x7f\x45\x4c\x46\x02\x01\x01\x03\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x3e\x00\x01\x00\x00\x00\x60\x09\x02\x00\x00\x00\x00\x00"..., 832) = 832
+51372 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+51372 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f69a7439000
+51372 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f69a6e61000
+51372 mprotect(0x7f69a7021000, 2097152, PROT_NONE) = 0
+51372 mmap(0x7f69a7221000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f69a7221000
+51372 mmap(0x7f69a7227000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f69a7227000
+51372 close(3)                          = 0
+51372 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f69a7438000
+51372 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f69a7437000
+51372 arch_prctl(ARCH_SET_FS, 0x7f69a7438700) = 0
+51372 mprotect(0x7f69a7221000, 16384, PROT_READ) = 0
+51372 mprotect(0x600000, 4096, PROT_READ) = 0
+51372 mprotect(0x7f69a7450000, 4096, PROT_READ) = 0
+51372 munmap(0x7f69a743a000, 89592)     = 0
+51372 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 1), ...}) = 0
+51372 brk(NULL)                         = 0xaa9000
+51372 brk(0xaca000)                     = 0xaca000
+51372 write(1, "Hello Wolrd\n", 12)     = 12
+51372 exit_group(0)                     = ?
+51372 +++ exited with 0 +++
